@@ -9,7 +9,8 @@ El código proporcionado en este repositorio consta de varios archivos Python qu
 
 - `EDA.ipynb`: Notebook que realiza una limpieza de los datos.
 - `functions.py`: Contiene funciones para preprocesar los títulos de los cursos, incluyendo la eliminación de enlaces, tokenización, eliminación de palabras vacías y puntuación, y reducción de palabras a su raíz, además de funciones auxiliares para construir tablas de frecuencia, entrenar modelos de regresión logística y Naive Bayes, y realizar predicciones.
-- `training_predictions.ipynb`: Notebook que entrena el modelo para hacer prediciones de clasificación.
+- `training_predictions.ipynb`: Notebook que entrena el modelo con regresión logistica para hacer predicciones de clasificación.
+- `Classifying_Naive_Bayes.ipynb`: Notebook que entrena el modelo Naive Bayes para hacer predicciones de clasificación.
 
 ## Configuración del Entorno
 
