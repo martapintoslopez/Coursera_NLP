@@ -250,3 +250,27 @@ def train_naive_bayes(freqs, train_x, train_y):
         loglikelihood[word] = np.log(prob_sci / prob_hum)
     
     return logprior, loglikelihood
+
+def naive_bayes_predict(title, logprior, loglikelihood):
+    '''
+    Input:
+        title: a string
+        logprior: a number
+        loglikelihood: a dictionary of words mapping to numbers
+    Output:
+        p: the sum of all the logliklihoods of each word in the title (if found in the dictionary) + logprior (a number)
+    '''
+    # process the tweet to get a list of words
+    word_l = preprocessing(title)
+
+    # initialize to zero
+    p = 0
+    # add the logprior
+    p += logprior
+
+    for word in word_l:
+        # check if the word exists in the loglikelihood dictionary
+        if word in loglikelihood:
+            p += loglikelihood[word]
+
+    return p
