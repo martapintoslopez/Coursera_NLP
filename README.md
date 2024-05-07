@@ -11,6 +11,7 @@ El código proporcionado en este repositorio consta de varios archivos Python qu
 - `functions.py`: Contiene funciones para preprocesar los títulos de los cursos, incluyendo la eliminación de enlaces, tokenización, eliminación de palabras vacías y puntuación, y reducción de palabras a su raíz, además de funciones auxiliares para construir tablas de frecuencia, entrenar modelos de regresión logística y Naive Bayes, y realizar predicciones.
 - `training_predictions.ipynb`: Notebook que entrena el modelo con regresión logistica para hacer predicciones de clasificación.
 - `Classifying_Naive_Bayes.ipynb`: Notebook que entrena el modelo Naive Bayes para hacer predicciones de clasificación.
+- `autocorrect.ipynb`: Notebook donde estoy desarrollando un autocorrector.
 
 ## Configuración del Entorno
 
